@@ -22,6 +22,14 @@ p.description {
 span.weather-detail {
   font-size: 12px;
 }
+p.author {
+  padding-top: 20px;
+  color: white;
+}
+p a {
+  color: #ffc007;
+  text-decoration: none;
+}
 .main-container {
   margin: auto;
   margin-top: 50px;
