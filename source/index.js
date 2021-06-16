@@ -64,9 +64,9 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-function degreeCelsius(celsius) {
+/*function degreeCelsius(celsius) {
   event.preventDefault();
-  let celsiusInput = document.querySelectorAll("span.degree");
+  let celsiusInput = document.querySelectorAll(".fc-degree");
   for (let i = 0; i < celsiusInput.length; ++i) {
     celsiusInput[i].innerHTML = "20ºC";
   }
@@ -74,7 +74,7 @@ function degreeCelsius(celsius) {
 
 function degreeFahrenheit(fahrenheit) {
   event.preventDefault();
-  let fahrenheitInput = document.querySelectorAll("span.degree");
+  let fahrenheitInput = document.querySelectorAll(".fc-degree");
   for (let i = 0; i < fahrenheitInput.length; ++i) {
     fahrenheitInput[i].innerHTML = "60ºF";
   }
@@ -84,7 +84,7 @@ let showCelsius = document.querySelector("#celsius");
 showCelsius.addEventListener("click", degreeCelsius);
 
 let showFahrenheit = document.querySelector("#fahrenheit");
-showFahrenheit.addEventListener("click", degreeFahrenheit);
+showFahrenheit.addEventListener("click", degreeFahrenheit); */
 
 let currentLocation = document.querySelector("#current-city");
 currentLocation.addEventListener("click", getCurrentLocation);
