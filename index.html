@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app 🌤</title>
+    <link rel="stylesheet" href="source/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <div class="card main-card-today">
+          <div class="card-body">
+            <h5 class="card-title">
+              <span id="date"> </span>
+              <div class="unit">
+                <a href="" class="scale" id="fahrenheit"> °F </a>
+                <span class="scale">|</span>
+                <a href="" class="scale" id="celsius"> °C </a>
+              </div>
+            </h5>
+            <div class="row">
+              <div class="col-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="weather-card">
+                      <span>
+                        <span id="city" class="city"></span>, <span class="main-degree" id="degree"></span>ºC</br>
+                        <p class="description" id="description"></p>
+                        <span class="main-degree" id="degree"></span>
+                        <span> ☀️</span>
+                        <br />
+                        <span class="weather-detail"><span>Humidity: <span id="humidity"></span>%</span>
+                      </br><span>Wind: <span id="wind"></span>km/h</span></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="col-8">
+                <form class="search-city" id="search-city">
+                  <input
+                    id="city-field"
+                    type="text"
+                    placeholder="Enter city"
+                    autocomplete="off"
+                  />
+                  <input
+                    id="city-submit"
+                    type="submit"
+                    class="search-button"
+                    value="Search"
+                  />
+                  <input
+                    id="current-city"
+                    type="submit"
+                    class="current-button"
+                    value="Current"
+                  />
+                </form>
+
+                <br />
+                <div class="row">
+                  <div class="col-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="">
+                          <span>
+                            <strong>Thursday</strong><br />
+                            <span class="degree" id="degree">20ºC</span><br />
+                            ☀️
+                            <br />
+                            <p><strong> 23ºC </strong>| 15ºC</p></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="">
+                          <span>
+                            <strong>Friday</strong><br />
+                            <span class="degree" id="degree">20ºC </span><br />
+                            ☀️
+                            <br />
+                            <p><strong> 23ºC </strong>| 15ºC</p></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="">
+                          <span>
+                            <strong>Saturday</strong><br />
+                            <span class="degree" id="degree">20ºC </span> <br />
+                            ☀️
+                            <br />
+                            <p><strong> 23ºC </strong>| 15ºC</p></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="source/index.js"></script>
+  </body>
+</html>
