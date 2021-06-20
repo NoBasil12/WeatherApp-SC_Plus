@@ -1,6 +1,6 @@
 html,
 body {
-  background: #5397e4 !important;
+  background: #6ba0dd !important;
 }
 
 form input {
@@ -27,13 +27,13 @@ p.author {
   color: white;
 }
 p a {
-  color: #ffc007;
+  color: #ffbf00;
   text-decoration: none;
 }
 .main-container {
   margin: auto;
   margin-top: 50px;
-  background: #5397e4;
+  background: #6ba0dd;
   background-repeat: repeat;
   width: 60%;
 }
