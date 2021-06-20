@@ -11,6 +11,10 @@ let days = [
 let day = days[now.getDay()];
 let hours = now.getHours();
 let minutes = now.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
+
 // console.log(`${day} ${hours}: ${minutes}`);
 let currentTime = document.querySelector("#date");
 let city = document.querySelector("#city");
