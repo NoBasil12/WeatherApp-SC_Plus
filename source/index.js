@@ -20,9 +20,10 @@ let currentTime = document.querySelector("#date");
 let city = document.querySelector("#city");
 let cityField = document.querySelector("#city-field");
 let citySubmit = document.querySelector("#city-submit");
+let iconElement = document.querySelector("#icon");
 
 function printTime() {
-  currentTime.innerHTML = `${day} ${hours}: ${minutes}`;
+  currentTime.innerHTML = `${day} ${hours}:${minutes}`;
 }
 
 printTime();
@@ -39,6 +40,9 @@ function displayWeatherCondition(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+  document.querySelector(
+    "#icon"
+  ).innerHTML = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
 }
 
 function searchCity(city) {
