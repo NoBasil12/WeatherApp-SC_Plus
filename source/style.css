@@ -44,7 +44,6 @@ p a {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  max-width: 900px;
   margin: 0px 80px;
   line-height: 1.5;
   backdrop-filter: blur(10px);
@@ -88,16 +87,21 @@ p a {
   background-color: #ffca2b;
 }
 
-.scale {
+/* .scale {
   float: right;
   padding: 2px;
   text-decoration: none;
-}
+} */
 
 a:hover {
   text-decoration: underline;
 }
-.unit {
+/* .unit {
   font-weight: light;
   display: inline;
+} */
+
+.search-city {
+  display: inline;
+  margin-left: 100px;
 }

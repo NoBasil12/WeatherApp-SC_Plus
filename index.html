@@ -20,39 +20,19 @@
         <div class="card main-card-today">
           <div class="card-body">
             <h5 class="card-title">
-              <span id="date"> </span>
+              <span id="date">  </span>
             <!--<div class="unit">
                 <a href="" class="scale" id="fahrenheit"> °F </a>
                 <span class="scale">|</span>
                 <a href="" class="scale" id="celsius"> °C </a>
               </div> -->
-            </h5>
-            <div class="row">
-              <div class="col-4">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="weather-card">
-                      <span>
-                        <span id="city" class="city"></span>, <span class="main-degree" id="degree"></span>ºC 
-                        <p class="description" id="description"></p>
-                        <span id="icon"> ☀️</span>
-                        <br />
-                        <span class="weather-detail"><span>Humidity: <span id="humidity"></span>%</span>
-                      </br><span>Wind: <span id="wind"></span>km/h</span></span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <br />
-              <div class="col-8">
-                <form class="search-city" id="search-city">
+              <form class="search-city" id="search-city">               
                   <input
                     id="city-field"
                     type="text"
                     placeholder="Enter city"
                     autocomplete="off"
-                  />
+                  />         
                   <input
                     id="city-submit"
                     type="submit"
@@ -66,10 +46,27 @@
                     value="Current"
                   />
                 </form>
-
-                <br />
-                <div class="row">
-                  <div class="col-4">
+            </h5>
+            <br>
+            <div class="row">
+              <div class="col-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="weather-card">
+                      <span>
+                        <span id="city" class="city"></span>, <span class="main-degree" id="degree"></span>ºC 
+                        <p class="description" id="description"></p>
+                        <span id="icon"> ☀️</span>
+                        <br />
+                        <span class="weather-detail"><span>Humidity: <span id="humidity"></span>%</span>
+                      <br>
+                      <span>Wind: <span id="wind"></span>km/h</span></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                  <div class="col-3">
                     <div class="card">
                       <div class="card-body">
                         <div class="">
@@ -77,14 +74,14 @@
                             <p><strong>Thursday</strong></p>
                             <span><strong class="fc-degree" id="max-degree"> 23ºC </strong>| <span class="fc-degree" id="min-degree"> 15ºC <span></span>
                              <span >Clouds</span>
-                            </br>
+                            <br>
                             ☀️
                             </span>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-3">
                     <div class="card">
                       <div class="card-body">
                         <div class="">
@@ -99,7 +96,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-3">
                     <div class="card">
                       <div class="card-body">
                         <div class="">
@@ -114,12 +111,10 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+             </div>
             </div>
           </div>
         </div>
-      </div>
       <p class="author"> <a href="https://github.com/NoBasil12/WeatherApp-SC_Plus" target="_blank">Open-sourse code </a>, by Francesca Carai</p>
     </div>
     <script src="source/index.js"></script>
