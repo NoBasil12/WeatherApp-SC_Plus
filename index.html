@@ -20,102 +20,126 @@
         <div class="card main-card-today">
           <div class="card-body">
             <h5 class="card-title">
-              <span id="date">  </span>
-            <!--<div class="unit">
+              <span id="date"> </span>
+              <!--<div class="unit">
                 <a href="" class="scale" id="fahrenheit"> °F </a>
                 <span class="scale">|</span>
                 <a href="" class="scale" id="celsius"> °C </a>
               </div> -->
-              <form class="search-city" id="search-city">               
-                  <input
-                    id="city-field"
-                    type="text"
-                    placeholder="Enter city"
-                    autocomplete="off"
-                  />         
-                  <input
-                    id="city-submit"
-                    type="submit"
-                    class="search-button"
-                    value="Search"
-                  />
-                  <input
-                    id="current-city"
-                    type="submit"
-                    class="current-button"
-                    value="Current"
-                  />
-                </form>
+              <form class="search-city" id="search-city">
+                <input
+                  id="city-field"
+                  type="text"
+                  placeholder="Enter city"
+                  autocomplete="off"
+                />
+                <input
+                  id="city-submit"
+                  type="submit"
+                  class="search-button"
+                  value="Search"
+                />
+                <input
+                  id="current-city"
+                  type="submit"
+                  class="current-button"
+                  value="Current"
+                />
+              </form>
             </h5>
-            <br>
+            <br />
             <div class="row">
               <div class="col-3">
                 <div class="card">
                   <div class="card-body">
                     <div class="weather-card">
                       <span>
-                        <span id="city" class="city"></span>, <span class="main-degree" id="degree"></span>ºC 
+                        <span id="city" class="city"></span>,
+                        <span class="main-degree" id="degree"></span>ºC
                         <p class="description" id="description"></p>
                         <span id="icon"> ☀️</span>
                         <br />
-                        <span class="weather-detail"><span>Humidity: <span id="humidity"></span>%</span>
-                      <br>
-                      <span>Wind: <span id="wind"></span>km/h</span></span>
+                        <span class="weather-detail"
+                          ><span>Humidity: <span id="humidity"></span>%</span>
+                          <br />
+                          <span>Wind: <span id="wind"></span>km/h</span></span
+                        >
                       </span>
                     </div>
                   </div>
                 </div>
               </div>
-                  <div class="col-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <div class="">
-                          <span>
-                            <p><strong>Thursday</strong></p>
-                            <span><strong class="fc-degree" id="max-degree"> 23ºC </strong>| <span class="fc-degree" id="min-degree"> 15ºC <span></span>
-                             <span >Clouds</span>
-                            <br>
-                            ☀️
-                            </span>
-                        </div>
-                      </div>
+              <div class="col-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="">
+                      <span>
+                        <p><strong clas="forcast-day">Thursday</strong></p>
+                        <span class="forecast-temp">
+                          <span class="max-degree"> 23ºC </span>
+                          |
+                          <span id="min-degree"> 15ºC </span>
+                        </span>
+                        <br />
+                        <span>Clouds</span>
+                        <br />
+                        ☀️
+                      </span>
                     </div>
                   </div>
-                  <div class="col-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <div class="">
-                          <span>
-                            <p><strong>Friday</strong></p>
-                            <span><strong class="fc-degree" id="max-degree"> 23ºC </strong>| <span class="fc-degree" id="min-degree"> 15ºC <span></span>
-                             <span >Clouds</span>
-                            </br>
-                            ☀️
-                            </span>
-                        </div>
-                      </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="">
+                      <span>
+                        <p><strong clas="forcast-day">friday</strong></p>
+                        <span class="forecast-temp">
+                          <span class="max-degree"> 23ºC </span>
+                          |
+                          <span id="min-degree"> 15ºC </span>
+                        </span>
+                        <br />
+                        <span>Clouds</span>
+                        <br />
+                        ☀️
+                      </span>
                     </div>
                   </div>
-                  <div class="col-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <div class="">
-                          <span>
-                            <p><strong>Saturday</strong></p>
-                            <span><strong class="fc-degree" id="max-degree"> 23ºC </strong>| <span class="fc-degree" id="min-degree"> 15ºC <span></span>
-                             <span >Clouds</span>
-                            </br>
-                            ☀️
-                            </span>
-                        </div>
-                      </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="">
+                      <span>
+                        <p><strong clas="forcast-day">Saturday</strong></p>
+                        <span class="forecast-temp">
+                          <span class="max-degree"> 23ºC </span>
+                          |
+                          <span id="min-degree"> 15ºC </span>
+                        </span>
+                        <br />
+                        <span>Clouds</span>
+                        <br />
+                        ☀️
+                      </span>
                     </div>
                   </div>
-             </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      <p class="author"> <a href="https://github.com/NoBasil12/WeatherApp-SC_Plus" target="_blank">Open-sourse code </a>, by Francesca Carai</p>
+      </div>
+      <p class="author">
+        <a
+          href="https://github.com/NoBasil12/WeatherApp-SC_Plus"
+          target="_blank"
+          >Open-sourse code </a
+        >, by Francesca Carai
+      </p>
     </div>
     <script src="source/index.js"></script>
   </body>
