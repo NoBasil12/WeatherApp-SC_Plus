@@ -59,7 +59,7 @@ function displayForecast(response) {
     response.data.daily[1].weather[0].main;
   document.querySelector(
     "#day-one-icon"
-  ).innerHTML = `<img src="http://openweathermap.org/img/wn/${response.data.daily[0].weather[0].icon}@2x.png" />`;
+  ).innerHTML = `<img src="http://openweathermap.org/img/wn/${response.data.daily[1].weather[0].icon}@2x.png" />`;
   document.querySelector("#day-one-humidity").innerHTML =
     response.data.daily[1].humidity;
   document.querySelector("#day-one-wind").innerHTML = Math.round(
@@ -79,7 +79,7 @@ function displayForecast(response) {
     response.data.daily[2].weather[0].main;
   document.querySelector(
     "#day-two-icon"
-  ).innerHTML = `<img src="http://openweathermap.org/img/wn/${response.data.daily[1].weather[0].icon}@2x.png" />`;
+  ).innerHTML = `<img src="http://openweathermap.org/img/wn/${response.data.daily[2].weather[0].icon}@2x.png" />`;
 
   document.querySelector("#day-two-humidity").innerHTML =
     response.data.daily[2].humidity;
@@ -101,7 +101,7 @@ function displayForecast(response) {
     response.data.daily[3].weather[0].main;
   document.querySelector(
     "#day-three-icon"
-  ).innerHTML = `<img src="http://openweathermap.org/img/wn/${response.data.daily[2].weather[0].icon}@2x.png" />`;
+  ).innerHTML = `<img src="http://openweathermap.org/img/wn/${response.data.daily[3].weather[0].icon}@2x.png" />`;
 
   document.querySelector("#day-three-humidity").innerHTML =
     response.data.daily[3].humidity;
