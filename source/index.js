@@ -44,7 +44,7 @@ function formatDay(timestamp) {
 }
 
 function displayForecast(response) {
-  console.log(response.data.daily);
+  //console.log(response.data.daily);
   // let forecast = response.data.daily;
   document.querySelector("#forcast-day-one").innerHTML = formatDay(
     response.data.daily[1].dt
@@ -111,14 +111,14 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
+  //console.log(coordinates);
   let apiKey = "5a889f50451580c7938b39a2504fc57f";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
 
 function displayWeatherCondition(response) {
-  console.log(response.data);
+  //console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#degree").innerHTML = Math.round(
     response.data.main.temp
