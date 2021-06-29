@@ -28,22 +28,86 @@ function printTime() {
 
 printTime();
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let weekdays = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  return weekdays[day];
+}
+
 function displayForecast(response) {
   console.log(response.data.daily);
-  let forecast = response.data.daily;
-  document.querySelector("#forcast-day-one").innerHTML =
-    response.data.daily[0].dt;
+  // let forecast = response.data.daily;
+  document.querySelector("#forcast-day-one").innerHTML = formatDay(
+    response.data.daily[1].dt
+  );
   document.querySelector("#day-one-max-degree").innerHTML = Math.round(
-    response.data.daily[0].temp.max
+    response.data.daily[1].temp.max
   );
   document.querySelector("#day-one-min-degree").innerHTML = Math.round(
-    response.data.daily[0].temp.min
+    response.data.daily[1].temp.min
   );
   document.querySelector("#day-one-description").innerHTML =
-    response.data.daily[0].weather[0].main;
+    response.data.daily[1].weather[0].main;
   document.querySelector(
     "#day-one-icon"
   ).innerHTML = `<img src="http://openweathermap.org/img/wn/${response.data.daily[0].weather[0].icon}@2x.png" />`;
+  document.querySelector("#day-one-humidity").innerHTML =
+    response.data.daily[1].humidity;
+  document.querySelector("#day-one-wind").innerHTML = Math.round(
+    response.data.daily[1].wind_speed
+  );
+  //day2
+  document.querySelector("#forcast-day-two").innerHTML = formatDay(
+    response.data.daily[2].dt
+  );
+  document.querySelector("#day-two-max-degree").innerHTML = Math.round(
+    response.data.daily[2].temp.max
+  );
+  document.querySelector("#day-two-min-degree").innerHTML = Math.round(
+    response.data.daily[2].temp.min
+  );
+  document.querySelector("#day-two-description").innerHTML =
+    response.data.daily[2].weather[0].main;
+  document.querySelector(
+    "#day-two-icon"
+  ).innerHTML = `<img src="http://openweathermap.org/img/wn/${response.data.daily[1].weather[0].icon}@2x.png" />`;
+
+  document.querySelector("#day-two-humidity").innerHTML =
+    response.data.daily[2].humidity;
+  document.querySelector("#day-two-wind").innerHTML = Math.round(
+    response.data.daily[2].wind_speed
+  );
+
+  //day3
+  document.querySelector("#forcast-day-three").innerHTML = formatDay(
+    response.data.daily[3].dt
+  );
+  document.querySelector("#day-three-max-degree").innerHTML = Math.round(
+    response.data.daily[3].temp.max
+  );
+  document.querySelector("#day-three-min-degree").innerHTML = Math.round(
+    response.data.daily[3].temp.min
+  );
+  document.querySelector("#day-three-description").innerHTML =
+    response.data.daily[3].weather[0].main;
+  document.querySelector(
+    "#day-three-icon"
+  ).innerHTML = `<img src="http://openweathermap.org/img/wn/${response.data.daily[2].weather[0].icon}@2x.png" />`;
+
+  document.querySelector("#day-three-humidity").innerHTML =
+    response.data.daily[3].humidity;
+  document.querySelector("#day-three-wind").innerHTML = Math.round(
+    response.data.daily[3].wind_speed
+  );
 }
 
 function getForecast(coordinates) {
